@@ -5,7 +5,7 @@ MEDIA_SUFFIXES = ('.jpg', '.jpeg', '.png', '.svg', '.gif', '.tif',
     '.m3u8', '.avi', '.mov', '.asf', '.rm', '.mpeg', '.mpg', '.qt',
     '.ram', '.dat', '.rmvb', '.ra', '.viv', '.asf', '.iso', '.bin',
     '.exe', '.img', '.tao', '.dao', '.cif', '.fcd', '.swf', '.flash', 
-    '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.pdf')
+    '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.pdf', '.flv',)
 
 autofill_schema = lambda url_list: ['http:'+each if each.startswith('//') else each for each in url_list]
 autofill_uri = lambda uri, url_list: [(uri[:-1]+each if uri.endswith('/') else uri+each) if each.startswith("/") else each for each in url_list]
